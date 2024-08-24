@@ -1,0 +1,31 @@
+@baseUrl = http://127.0.0.1:4001
+## GET - fetch all envelopes
+# {{baseUrl}}/envelopes
+
+
+## POST - add an envelope
+# POST {{baseUrl}}/envelopes
+# Content-Type: application/json
+
+# {
+#     "category": "Utility Bills",
+#     "budget": 4000
+# }
+
+## PUT - update an envelope
+# PUT {{baseUrl}}/envelopes/Pet care
+# Content-Type: application/json
+
+# {
+#     "category": "Transportation",
+#     "budget": 1000
+# }
+
+## DELETE - delete an envelope
+DELETE {{baseUrl}}/envelopes/Clothing
+Content-Type: application/json
+
+{
+    "category": "Clothing",
+    "budget": 2000
+}
